@@ -11,7 +11,7 @@ export default class Matrix extends Component {
   }
 
 // in ColorSelector
-  changeSelectedColor = (hex) => this.setState({ selectedColor: hex})
+  changeSelectedColor = (color) => this.setState({ selectedColor: color})
 
 // in Cell
   getCurrentColor = () => this.state.selectedColor
