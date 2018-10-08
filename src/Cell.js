@@ -9,7 +9,7 @@ export default class Cell extends Component {
     }
   }
 
-  changeColor = () => {
+  handleClick = () => {
     // calls getCurrentColor from Matrix - reads current color
     const currentColor = this.props.getCurrentColor();
     this.setState({color: currentColor})
@@ -17,7 +17,7 @@ export default class Cell extends Component {
 
   render() {
     return (
-      <div className="cell" style={{backgroundColor: this.state.color}}>
+      <div className="cell" style={{backgroundColor: this.state.color}} onClick={this.handleClick}>
       </div>
     )
   }

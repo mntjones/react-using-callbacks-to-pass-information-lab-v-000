@@ -7,11 +7,11 @@ export default class Matrix extends Component {
 
   constructor() {
     super()
-    this.state = { selectedColor: "#F00" }
+    this.state = { selectedColor: "#FFF" }
   }
 
 // in ColorSelector
-  changeSelectedColor = (hex) => this.setState({ selectedColor: hex})
+  changeSelectedColor = (color) => this.setState({ selectedColor: color})
 
 // in Cell
   getCurrentColor = () => this.state.selectedColor
